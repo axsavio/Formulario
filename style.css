@@ -26,7 +26,14 @@ body {
 .rightside {
     width: 600px;
     padding: 50px;
+    box-shadow:1px 1px 10px #767574;
+    margin-top: 15px;
+    border-radius: 10px;
+   
 
+}
+.rightside h1 {
+    text-shadow: 1px 5px 10px #767574;
 }
 .rightside label {
     display: block;
@@ -76,5 +83,6 @@ footer {
     justify-content: center;
     font-size: 16px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
 
 }
