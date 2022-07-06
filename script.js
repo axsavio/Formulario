@@ -1,17 +1,17 @@
-let validator = { 
+ let validator = { 
     handleSubmit:(event)=>{
-        event.preventDefault(); 
-        let send = true; 
+        event.preventDefault(); //Previnir o comportamento padrão do formulário (enviar)
+        let send = true; //Enviar o formulário 
 
         let inputs = form.querySelectorAll('input'); 
 
         validator.clearErros(); 
         
-        for(let i=0; i < inputs.length; i++){ 
+        for(let i=0; i < inputs.length; i++){  //Verificar os campos individualmente (inputs)
             let input = inputs[i];
           let check =   validator.checkInput(input); 
-          if(check !== true){ 
-            send = false; //Exibir o erro
+          if(check !== true){  //Verificar se os data-rules(regras) estão ok
+            send = false; //Em caso de erro não enviar o forms
             validator.showError(input, check);
             
 
